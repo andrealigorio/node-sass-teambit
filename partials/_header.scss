@@ -3,34 +3,36 @@ header {
     height: 70px;
     border-bottom: 1px solid $textColor;
     @include flexSpaceBetween;
-    .logo {
-        height: 30px;
-        cursor: pointer;
-        img {
-            height: 100%;
+}
+.logo {
+    height: 30px;
+    cursor: pointer;
+    img {
+        height: 100%;
+    }
+}
+nav {
+    display: flex;
+    align-items: center;
+    ul {
+        list-style: none;
+        li {
+            display: inline-block;
+            margin: 0 $spacing * 0.5;
+            i {
+                font-size: $fontSize * 0.8;
+                margin-left: 5px;
+            }
         }
     }
-    nav {
-        display: flex;
-        align-items: center;
-        ul {
-            list-style: none;
-            li {
-                display: inline-block;
-                margin: 0 $spacing * 0.5;
-                i {
-                    font-size: $fontSize * 0.8;
-                    margin-left: 5px;
-                }
-            }
-        }
-        button {
-            margin-left: $spacing * 0.5;
-            .logo_google {
-                img {
-                    height: 100%;
-                }
-            }
+    button {
+        margin-left: $spacing * 0.5;
+    }
+}
+button {
+    .logo_google {
+        img {
+            height: 100%;
         }
     }
 }

@@ -78,96 +78,100 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-header .logo {
+
+.logo {
   height: 30px;
   cursor: pointer;
 }
-header .logo img {
+.logo img {
   height: 100%;
 }
-header nav {
+
+nav {
   display: flex;
   align-items: center;
 }
-header nav ul {
+nav ul {
   list-style: none;
 }
-header nav ul li {
+nav ul li {
   display: inline-block;
   margin: 0 10px;
 }
-header nav ul li i {
+nav ul li i {
   font-size: 12.8px;
   margin-left: 5px;
 }
-header nav button {
+nav button {
   margin-left: 10px;
 }
-header nav button .logo_google img {
+
+button .logo_google img {
   height: 100%;
 }
 
 main {
   width: 100%;
 }
-main .jumbotron {
+
+.jumbotron {
   padding: 30px 0;
   background-color: white;
 }
-main .jumbotron .jumbo_text {
+.jumbotron .jumbo_text {
   width: 50%;
   float: left;
 }
-main .jumbotron .jumbo_text p {
+.jumbotron .jumbo_text p:first-of-type {
   margin: 10px 0 50px 0;
 }
-main .jumbotron .jumbo_text .sign_up_btns {
+.jumbotron .jumbo_text .sign_up_btns {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
-main .jumbotron .jumbo_text .sign_up_btns button .logo_google img {
-  height: 100%;
-}
-main .jumbotron .jumbo_text .sign_up_btns button .logo_slack img {
-  height: 100%;
-}
-main .jumbotron .jumbo_text .sign_up_btns span {
+.jumbotron .jumbo_text .sign_up_btns span {
   margin: 0 10px;
 }
-main .jumbotron .jumbo_text p {
+.jumbotron .jumbo_text .email_link {
   display: inline-block;
+  font-size: 12.8px;
   cursor: pointer;
 }
-main .jumbotron .jumbo_text p:hover {
+.jumbotron .jumbo_text .email_link:hover {
   opacity: 0.8;
 }
-main .jumbotron .jumbo_text p i {
-  font-size: 12.8px;
+.jumbotron .jumbo_text .email_link i {
   margin-left: 5px;
 }
-main .jumbotron .jumbo_img {
+
+button .logo_slack img {
+  height: 100%;
+}
+
+.jumbo_img {
   width: 50%;
   float: left;
 }
-main .jumbotron .jumbo_img img {
+.jumbo_img img {
   width: 100%;
 }
-main .first {
-  padding: 30px 0;
+
+.first {
+  padding: 40px 0;
   width: 100%;
   background-color: #ffe7d2;
 }
-main .first .title {
+.first .title {
   text-align: center;
   margin-bottom: 40px;
 }
-main .first .items {
+.first .items {
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-main .first .items .item {
+.first .items .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -176,9 +180,24 @@ main .first .items .item {
   width: calc(100% / 3 - 20px);
   height: 150px;
 }
-main .first .items .item img {
+.first .items .item img {
   height: 70%;
 }
-main .first .items .item span {
-  font-size: 12.8px;
+.first .items .item span {
+  font-size: 14.4px;
+  text-align: center;
+}
+.first .rabbit {
+  width: 300px;
+  margin: 100px auto;
+}
+.first .rabbit img {
+  width: 100%;
+}
+.first .top {
+  border-bottom: 1px solid #58402c;
+  margin-bottom: 40px;
+}
+.first .bottom .final_title {
+  text-align: center;
 }

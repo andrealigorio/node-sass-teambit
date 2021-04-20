@@ -1,77 +1,89 @@
 main {
     width: 100%;
-    .jumbotron {
-        padding: $spacing * 1.5 0;
-        background-color: $brandSecondary;
-        .jumbo_text {
-            width: 50%;
-            float: left;
-            p {
-                margin: 10px 0 $spacing * 2.5 0;
-            }
-            .sign_up_btns {
-                display: flex;
-                align-items: center;
-                margin-bottom: $spacing * 0.5;
-                button {
-                    .logo_google {
-                        img {
-                            height: 100%;
-                        }
-                    }
-                    .logo_slack {
-                        img {
-                            height: 100%;
-                        }
-                    }
-                }
-                span {
-                    margin: 0 $spacing * 0.5;
-                }
-            }
-            p {
-                display: inline-block;
-                cursor: pointer;
-                &:hover {
-                    opacity: 0.8;
-                }
-                i {
-                    font-size: $fontSize * 0.8;
-                    margin-left: 5px;
-                }
+}
+.jumbotron {
+    padding: $spacing * 1.5 0;
+    background-color: $brandSecondary;
+    .jumbo_text {
+        width: 50%;
+        float: left;
+        p:first-of-type {
+            margin: 10px 0 $spacing * 2.5 0;
+        }
+        .sign_up_btns {
+            display: flex;
+            align-items: center;
+            margin-bottom: $spacing * 0.5;
+            span {
+                margin: 0 $spacing * 0.5;
             }
         }
-        .jumbo_img {
-            width: 50%;
-            float: left;
-            img {
-                width: 100%;
+        .email_link {
+            display: inline-block;
+            font-size: $fontSize * 0.8;
+            cursor: pointer;
+            &:hover {
+                opacity: 0.8;
+            }
+            i {
+                margin-left: 5px;
             }
         }
     }
-    .first {
-        padding: $spacing * 1.5 0;
-        width: 100%;
-        background-color: $brandPrimary;
-        .title {
-            text-align: center;
-            margin-bottom: $spacing * 2;
+}
+button {
+    .logo_slack {
+        img {
+            height: 100%;
         }
-        .items {
-            @include flexSpaceAround;
-            .item {
-                @include flexSpaceBetween;
-                flex-direction: column;
-                margin: 0 20px;
-                width: calc(100% / 3 - 20px);
-                height: 150px;
-                img {
-                    height: 70%;
-                }
-                span {
-                    font-size: $fontSize * 0.8;
-                }
+    }
+}
+.jumbo_img {
+    width: 50%;
+    float: left;
+    img {
+        width: 100%;
+    }
+}
+.first {
+    padding: $spacing * 2 0;
+    width: 100%;
+    background-color: $brandPrimary;
+    .title {
+        text-align: center;
+        margin-bottom: $spacing * 2;
+    }
+    .items {
+        @include flexSpaceAround;
+        .item {
+            @include flexSpaceBetween;
+            flex-direction: column;
+            margin: 0 20px;
+            width: calc(100% / 3 - 20px);
+            height: 150px;
+            img {
+                height: 70%;
             }
+            span {
+                font-size: $fontSize * 0.9;
+                text-align: center;
+            }
+        }
+    }
+    .rabbit {
+        width: 300px;
+        margin: $spacing * 5 auto;
+        img {
+            width: 100%;
+        }
+    }
+    .top {
+        border-bottom: 1px solid $textColor;
+        margin-bottom: $spacing * 2;
+    }
+    .bottom {
+        .final_title {
+            text-align: center;
         }
     }
 }
