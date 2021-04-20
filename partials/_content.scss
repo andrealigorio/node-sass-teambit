@@ -1,0 +1,52 @@
+main {
+    width: 100%;
+    .jumbotron {
+        padding: $spacing * 1.5 0;
+        background-color: $brandSecondary;
+        .jumbo_text {
+            width: 50%;
+            float: left;
+            p {
+                margin: 10px 0 $spacing * 2.5 0;
+            }
+            .sign_up_btns {
+                display: flex;
+                align-items: center;
+                margin-bottom: $spacing * 0.5;
+                button {
+                    .logo_google {
+                        img {
+                            height: 100%;
+                        }
+                    }
+                    .logo_slack {
+                        img {
+                            height: 100%;
+                        }
+                    }
+                }
+                span {
+                    margin: 0 $spacing * 0.5;
+                }
+            }
+            p {
+                display: inline-block;
+                cursor: pointer;
+                &:hover {
+                    opacity: 0.8;
+                }
+                i {
+                    font-size: $fontSize * 0.8;
+                    margin-left: 5px;
+                }
+            }
+        }
+        .jumbo_img {
+            width: 50%;
+            float: left;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

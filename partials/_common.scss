@@ -8,6 +8,10 @@ body {
     font-family: $fontFamily;
     font-size: $fontSize;
     font-weight: $fontWeight;
+    line-height: $lineHeight;
+}
+.clearfix::after {
+    @include clearfix;
 }
 .w80 {
     width: 80%;
@@ -21,9 +25,11 @@ li:hover {
 }
 .btn {
     display: flex;
+    align-items: center;
     border: 1px solid $btnPrimary;
     border-radius: 5px;
     font-weight: $fontWeight + 100;
+    padding: 5px;
     cursor: pointer;
 }
 .btn.white {
@@ -34,7 +40,18 @@ li:hover {
     background-color: $btnPrimary;
     color: $btnSecondary;
 }
-.logo_google {
-    height: 15px;
+.btn.blue {
+    background-color: $btnPrimary;
+    color: $btnSecondary;
+}
+.btn.blue:hover {
+    background-color: $btnSecondary;
+    color: $btnPrimary;
+}
+.btn, .btn:hover {
+    transition: 0.3s;
+}
+.logo_google, .logo_slack {
+    height: 20px;
     margin-right: 5px;
 }
