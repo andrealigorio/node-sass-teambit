@@ -31,6 +31,15 @@ li:hover {
   opacity: 0.8;
 }
 
+a {
+  text-decoration: none;
+  color: #2c4792;
+}
+
+a:hover {
+  opacity: 0.8;
+}
+
 .btn {
   display: flex;
   align-items: center;
@@ -158,8 +167,6 @@ button .logo_slack img {
 }
 
 .first {
-  padding: 40px 0;
-  width: 100%;
   background-color: #ffe7d2;
 }
 .first .title {
@@ -200,4 +207,86 @@ button .logo_slack img {
 }
 .first .bottom .final_title {
   text-align: center;
+}
+
+.second {
+  background-color: white;
+}
+.second .image {
+  width: 50%;
+}
+.second .image img {
+  width: 100%;
+}
+.second .description {
+  width: 25%;
+}
+.second .description p {
+  margin-top: 40px;
+}
+.second .description a {
+  display: inline-block;
+  margin: 20px 0;
+}
+.second .description a i {
+  margin-left: 5px;
+}
+.second .des_img {
+  width: 100%;
+}
+.second .des_img img {
+  width: 100%;
+}
+
+.first, .second {
+  padding: 40px 0;
+  width: 100%;
+}
+
+.row1 {
+  clear: both;
+  padding: 40px 0;
+}
+.row1 > div {
+  float: left;
+}
+
+.row1 .description {
+  margin-right: 25%;
+}
+
+.row2 {
+  clear: both;
+  padding: 40px 0;
+}
+.row2 > div {
+  float: left;
+}
+
+.row2 .description {
+  margin-left: 25%;
+}
+
+.row3 {
+  clear: both;
+  padding: 40px 0;
+}
+.row3 > div {
+  float: left;
+}
+
+.row3 .description {
+  margin-right: 25%;
+}
+
+.row4 {
+  clear: both;
+  padding: 40px 0;
+}
+.row4 > div {
+  float: left;
+}
+
+.row4 .description {
+  margin-left: 25%;
 }

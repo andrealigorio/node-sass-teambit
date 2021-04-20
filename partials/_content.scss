@@ -23,7 +23,7 @@ main {
             font-size: $fontSize * 0.8;
             cursor: pointer;
             &:hover {
-                opacity: 0.8;
+                opacity: $opacityHover;
             }
             i {
                 margin-left: 5px;
@@ -46,8 +46,6 @@ button {
     }
 }
 .first {
-    padding: $spacing * 2 0;
-    width: 100%;
     background-color: $brandPrimary;
     .title {
         text-align: center;
@@ -84,6 +82,64 @@ button {
     .bottom {
         .final_title {
             text-align: center;
+        }
+    }
+}
+.second {
+    background-color: $brandSecondary;
+    .image {
+        width: 50%;
+    }
+    .image {
+        img {
+            width: 100%;
+        }
+    }
+    .description {
+        width: 25%;
+        p {
+            margin-top: $spacing * 2;
+        }
+        a {
+            display: inline-block;
+            margin: $spacing 0;
+            i {
+                margin-left: 5px;
+            }
+        }
+    }
+    .des_img {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+    
+}
+.first, .second {
+    padding: $spacing * 2 0;
+    width: 100%;
+}
+
+@for $i from 1 through 4 {
+    .row#{$i} {
+        clear: both;
+        padding: $spacing * 2 0;
+        > div {
+            float: left;
+        }
+    }
+    @if($i % 2 == 0) {
+        .row#{$i} {
+            .description {
+                margin-left: 25%;
+            }
+        }
+    } @else {
+        .row#{$i} {
+            .description {
+                margin-right: 25%;
+            }
         }
     }
 }

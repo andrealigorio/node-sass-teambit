@@ -21,7 +21,14 @@ li {
     cursor: pointer;
 }
 li:hover {
-    opacity: 0.8;
+    opacity: $opacityHover;
+}
+a {
+    text-decoration: none;
+    color: $anchorColor;
+}
+a:hover {
+    opacity: $opacityHover;
 }
 .btn {
     display: flex;
