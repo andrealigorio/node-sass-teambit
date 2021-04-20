@@ -1,0 +1,36 @@
+header {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid $textColor;
+    @include flexSpaceBetween;
+    .logo {
+        height: 30px;
+        cursor: pointer;
+        img {
+            height: 100%;
+        }
+    }
+    nav {
+        display: flex;
+        align-items: center;
+        ul {
+            list-style: none;
+            li {
+                display: inline-block;
+                margin: 0 10px;
+                i {
+                    font-size: $fontSize * 0.8;
+                    margin-left: 5px;
+                }
+            }
+        }
+        button {
+            padding: 5px;
+            .logo_google {
+                img {
+                    height: 100%;
+                }
+            }
+        }
+    }
+}

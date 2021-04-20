@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    color: $textColor;
+    font-family: $fontFamily;
+    font-size: $fontSize;
+    font-weight: $fontWeight;
+}
+.w80 {
+    width: 80%;
+    margin: 0 auto;
+}
+li {
+    cursor: pointer;
+}
+li:hover {
+    opacity: 0.8;
+}
+.btn {
+    display: flex;
+    border: 1px solid $btnPrimary;
+    border-radius: 5px;
+    font-weight: $fontWeight + 100;
+    cursor: pointer;
+}
+.btn.white {
+    background-color: $btnSecondary;
+    color: $btnPrimary;
+}
+.btn.white:hover {
+    background-color: $btnPrimary;
+    color: $btnSecondary;
+}
+.logo_google {
+    height: 15px;
+    margin-right: 5px;
+}
