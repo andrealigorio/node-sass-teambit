@@ -243,50 +243,26 @@ button .logo_slack img {
   width: 100%;
 }
 
-.row1 {
+.rowEven {
   clear: both;
   padding: 40px 0;
 }
-.row1 > div {
+.rowEven > div {
   float: left;
 }
 
-.row1 .description {
-  margin-right: 25%;
-}
-
-.row2 {
-  clear: both;
-  padding: 40px 0;
-}
-.row2 > div {
-  float: left;
-}
-
-.row2 .description {
+.rowEven .description {
   margin-left: 25%;
 }
 
-.row3 {
+.rowOdd {
   clear: both;
   padding: 40px 0;
 }
-.row3 > div {
+.rowOdd > div {
   float: left;
 }
 
-.row3 .description {
+.rowOdd .description {
   margin-right: 25%;
-}
-
-.row4 {
-  clear: both;
-  padding: 40px 0;
-}
-.row4 > div {
-  float: left;
-}
-
-.row4 .description {
-  margin-left: 25%;
 }

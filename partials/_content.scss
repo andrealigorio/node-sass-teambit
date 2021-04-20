@@ -121,22 +121,22 @@ button {
     width: 100%;
 }
 
-@for $i from 1 through 4 {
-    .row#{$i} {
+@each $row in rowEven, rowOdd {
+    .#{$row} {
         clear: both;
         padding: $spacing * 2 0;
         > div {
             float: left;
         }
     }
-    @if($i % 2 == 0) {
-        .row#{$i} {
+    @if($row == 'rowEven') {
+        .#{$row} {
             .description {
                 margin-left: 25%;
             }
         }
     } @else {
-        .row#{$i} {
+        .#{$row} {
             .description {
                 margin-right: 25%;
             }
