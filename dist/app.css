@@ -212,6 +212,10 @@ button .logo_slack img {
 .second {
   background-color: white;
 }
+.second .row {
+  clear: both;
+  padding: 40px 0;
+}
 .second .image {
   width: 50%;
 }
@@ -243,26 +247,16 @@ button .logo_slack img {
   width: 100%;
 }
 
-.rowEven {
-  clear: both;
-  padding: 40px 0;
-}
-.rowEven > div {
-  float: left;
-}
-
-.rowEven .description {
+.row.even .description {
   margin-left: 25%;
 }
-
-.rowOdd {
-  clear: both;
-  padding: 40px 0;
-}
-.rowOdd > div {
-  float: left;
+.row.even > div {
+  float: right;
 }
 
-.rowOdd .description {
+.row.odd .description {
   margin-right: 25%;
+}
+.row.odd > div {
+  float: left;
 }

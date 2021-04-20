@@ -87,6 +87,10 @@ button {
 }
 .second {
     background-color: $brandSecondary;
+    .row {
+        clear: both;
+        padding: $spacing * 2 0;
+    }
     .image {
         width: 50%;
     }
@@ -121,24 +125,23 @@ button {
     width: 100%;
 }
 
-@each $row in rowEven, rowOdd {
-    .#{$row} {
-        clear: both;
-        padding: $spacing * 2 0;
-        > div {
-            float: left;
-        }
-    }
-    @if($row == 'rowEven') {
-        .#{$row} {
+@each $row in even, odd {
+    @if($row == 'even') {
+        .row.#{$row} {
             .description {
                 margin-left: 25%;
             }
+            > div {
+            float: right;
+            }
         }
     } @else {
-        .#{$row} {
+        .row.#{$row} {
             .description {
                 margin-right: 25%;
+            }
+            > div {
+            float: left;
             }
         }
     }
