@@ -15,6 +15,7 @@ body {
 }
 .w80 {
     width: 80%;
+    min-width: 1170px;
     margin: 0 auto;
 }
 li {
@@ -22,6 +23,9 @@ li {
 }
 li:hover {
     opacity: $opacityHover;
+}
+ul {
+    list-style: none;
 }
 a {
     text-decoration: none;
@@ -61,4 +65,10 @@ a:hover {
 .logo_google, .logo_slack {
     height: 20px;
     margin-right: 5px;
+}
+
+@media screen and (max-width: #{$mediaScreenHigh}) {
+    .w80 {
+        min-width: 95%;
+    }
 }

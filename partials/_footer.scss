@@ -1,0 +1,39 @@
+footer {
+    background-color: $brandSecondary;
+    padding: $spacing * 3 0;
+    .w80 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .logo {
+        width: 25%;
+        display: flex;
+        img {
+            height: 60px;
+            margin-right: $spacing * 0.5;
+        }
+        .description {
+            span {
+                color: $btnPrimary;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.links {
+    width: 70%;
+    display: flex;
+    > div {
+        width: calc(100% / 5);
+    }
+    h3 {
+        margin-bottom: $spacing;
+    }
+    li {
+        line-height: $lineHeight * 1.5;
+        font-size: $fontSize * 0.8;
+    }
+}
