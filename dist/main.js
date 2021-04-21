@@ -3,7 +3,7 @@ var app = new Vue({
     el: '#app',
     data: {
         header: {
-            logo: "logo.svg",
+            logo: "TB_logo.png",
             links: [
                 {
                     name: "Solutions",
@@ -94,7 +94,7 @@ var app = new Vue({
             ]
         },
         footer: {
-            logo: "logo-small.svg",
+            logo: "TB_logo_small.png",
             logoName: "Teambit",
             description: "helps teams create high performing cultures by making feedback a daily habit.",
             menu: [
