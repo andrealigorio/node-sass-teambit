@@ -4,6 +4,7 @@ footer {
     .w80 {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
     .logo {
         width: 25%;
@@ -26,6 +27,7 @@ footer {
 .links {
     width: 70%;
     display: flex;
+    flex-wrap: wrap;
     > div {
         width: calc(100% / 5);
     }
@@ -35,5 +37,36 @@ footer {
     li {
         line-height: $lineHeight * 1.5;
         font-size: $fontSize * 0.8;
+    }
+}
+
+@media screen and (max-width: #{$mediaScreenMedium}) {
+    footer {
+        .w80 {
+            justify-content: center;
+        }
+        .logo {
+            width: 100%;
+            text-align: center;
+            margin-bottom: $spacing * 2;
+        }
+        .links {
+            padding: $spacing;
+            width: 100%;
+            > div {
+                width: calc(100% / 3);
+                text-align: center;
+                margin-bottom: $spacing;
+            }
+        }
+    }
+}
+@media screen and (max-width: #{$mediaScreenLow}) {
+    footer {
+        .links {
+            > div {
+                width: 100%;
+            }
+        }
     }
 }

@@ -2,7 +2,7 @@ main {
     width: 100%;
 }
 .jumbotron {
-    padding: $spacing * 1.5 0;
+    padding: $spacing * 1.5 $spacing * 0.5;
     background-color: $brandSecondary;
     .jumbo_text {
         width: 50%;
@@ -53,6 +53,7 @@ button {
     }
     .items {
         @include flexSpaceAround;
+        flex-wrap: wrap;
         .item {
             @include flexSpaceBetween;
             flex-direction: column;
@@ -175,6 +176,7 @@ button {
     .founders {
         display: flex;
         align-items: center;
+        flex-wrap: wrap;
         > div {
             margin-right: $spacing;
         }
@@ -192,4 +194,49 @@ button {
 }
 .btn_third {
     @include flexColumnCenter;
+}
+
+@media screen and (max-width: #{$mediaScreenMedium}) {
+    .jumbotron {
+        .jumbo_text, .jumbo_img {
+            width: 100%;
+            float: none;
+        }
+        .jumbo_text {
+            @include flexColumnCenter;
+            text-align: center;
+            margin-bottom: $spacing;
+        }
+    }
+    .second {
+        .row {
+            .image, .description {
+                width: 100%;
+                padding: $spacing;
+            }
+            .description {
+                margin-left: 0;
+                margin-right: 0;
+                text-align: center;
+            }
+        }
+    }
+    .third {
+        .box {
+            width: 90%;
+        }
+    }
+}
+@media screen and (max-width: #{$mediaScreenLow}) {
+    .first {
+        .items {
+            .item {
+                width: 100%;
+                margin-bottom: $spacing;
+            }
+        }
+        .rabbit {
+            width: 80%;
+        }
+    }
 }

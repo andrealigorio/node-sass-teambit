@@ -9,6 +9,7 @@ body {
     font-size: $fontSize;
     font-weight: $fontWeight;
     line-height: $lineHeight;
+    margin-top: $headerHeight;
 }
 .clearfix::after {
     @include clearfix;
@@ -17,6 +18,7 @@ body {
     width: 80%;
     min-width: 1170px;
     margin: 0 auto;
+    padding: 0 10px;
 }
 li {
     cursor: pointer;
@@ -69,6 +71,6 @@ a:hover {
 
 @media screen and (max-width: #{$mediaScreenHigh}) {
     .w80 {
-        min-width: 95%;
+        min-width: 100%;
     }
 }

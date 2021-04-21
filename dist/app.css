@@ -10,6 +10,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
+  margin-top: 70px;
 }
 
 .clearfix::after {
@@ -22,6 +23,7 @@ body {
   width: 80%;
   min-width: 1170px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 li {
@@ -86,13 +88,17 @@ a:hover {
 
 @media screen and (max-width: 1200px) {
   .w80 {
-    min-width: 95%;
+    min-width: 100%;
   }
 }
 header {
   width: 100%;
   height: 70px;
   background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5;
 }
 header .w80 {
   height: 100%;
@@ -103,6 +109,11 @@ header .w80 {
 }
 header .logo {
   height: 30px;
+}
+header .hamburger {
+  display: none;
+  font-size: 32px;
+  cursor: pointer;
 }
 
 .logo img {
@@ -130,12 +141,21 @@ button .logo_google img {
   height: 100%;
 }
 
+@media screen and (max-width: 850px) {
+  header .hamburger {
+    display: block;
+  }
+
+  nav {
+    display: none;
+  }
+}
 main {
   width: 100%;
 }
 
 .jumbotron {
-  padding: 30px 0;
+  padding: 30px 10px;
   background-color: white;
 }
 .jumbotron .jumbo_text {
@@ -190,6 +210,7 @@ button .logo_slack img {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
 }
 .first .items .item {
   display: flex;
@@ -304,6 +325,7 @@ button .logo_slack img {
 .box .founders {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 }
 .box .founders > div {
   margin-right: 20px;
@@ -323,6 +345,42 @@ button .logo_slack img {
   align-items: center;
 }
 
+@media screen and (max-width: 850px) {
+  .jumbotron .jumbo_text, .jumbotron .jumbo_img {
+    width: 100%;
+    float: none;
+  }
+  .jumbotron .jumbo_text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .second .row .image, .second .row .description {
+    width: 100%;
+    padding: 20px;
+  }
+  .second .row .description {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .third .box {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .first .items .item {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .first .rabbit {
+    width: 80%;
+  }
+}
 footer {
   background-color: white;
   padding: 60px 0;
@@ -330,6 +388,7 @@ footer {
 footer .w80 {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 footer .logo {
   width: 25%;
@@ -350,6 +409,7 @@ footer .logo .description span:hover {
 .links {
   width: 70%;
   display: flex;
+  flex-wrap: wrap;
 }
 .links > div {
   width: calc(100% / 5);
@@ -360,4 +420,29 @@ footer .logo .description span:hover {
 .links li {
   line-height: 2.25;
   font-size: 12.8px;
+}
+
+@media screen and (max-width: 850px) {
+  footer .w80 {
+    justify-content: center;
+  }
+  footer .logo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  footer .links {
+    padding: 20px;
+    width: 100%;
+  }
+  footer .links > div {
+    width: calc(100% / 3);
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 500px) {
+  footer .links > div {
+    width: 100%;
+  }
 }
