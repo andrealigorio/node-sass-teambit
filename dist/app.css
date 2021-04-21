@@ -210,7 +210,6 @@ button .logo_slack img {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
 }
 .first .items .item {
   display: flex;
@@ -373,6 +372,9 @@ button .logo_slack img {
   }
 }
 @media screen and (max-width: 500px) {
+  .first .items {
+    flex-wrap: wrap;
+  }
   .first .items .item {
     width: 100%;
     margin-bottom: 20px;
